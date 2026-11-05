@@ -1,0 +1,58 @@
+[
+  {
+    "product_id": "PROD-101",
+    "sku": "ELEC-HEADPHONE-ANC",
+    "name": "Active Noise Cancelling Wireless Headphones",
+    "category": "Electronics",
+    "standard_cost": 85.0,
+    "retail_price": 199.99
+  },
+  {
+    "product_id": "PROD-102",
+    "sku": "ELEC-CABLE-USB-C",
+    "name": "Braided USB-C Charging Cable 2m",
+    "category": "Electronics",
+    "standard_cost": 3.2,
+    "retail_price": 14.99
+  },
+  {
+    "product_id": "PROD-103",
+    "sku": "ELEC-SMART-WATCH",
+    "name": "Titanium Fitness & GPS Smartwatch",
+    "category": "Electronics",
+    "standard_cost": 120.0,
+    "retail_price": 299.99
+  },
+  {
+    "product_id": "PROD-201",
+    "sku": "HOME-AIR-PURIFIER",
+    "name": "HEPA-13 Multi-Room Air Purifier",
+    "category": "Home Goods",
+    "standard_cost": 110.0,
+    "retail_price": 249.0
+  },
+  {
+    "product_id": "PROD-202",
+    "sku": "HOME-COFFEE-MAKER",
+    "name": "Precision Temperature Drip Coffee Maker",
+    "category": "Home Goods",
+    "standard_cost": 38.0,
+    "retail_price": 89.5
+  },
+  {
+    "product_id": "PROD-301",
+    "sku": "APP-WINTER-JACKET",
+    "name": "Insulated Thermal Parka Jacket",
+    "category": "Apparel",
+    "standard_cost": 45.0,
+    "retail_price": 120.0
+  },
+  {
+    "product_id": "PROD-302",
+    "sku": "APP-THERMAL-GLOVES",
+    "name": "Touchscreen Compatible Thermal Gloves",
+    "category": "Apparel",
+    "standard_cost": 7.5,
+    "retail_price": 25.0
+  }
+]

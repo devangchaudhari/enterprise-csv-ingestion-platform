@@ -1,0 +1,47 @@
+version: 2
+
+sources:
+  - name: raw_retail
+    schema: public
+    tables:
+      - name: wh_orders
+        description: "Raw ingested retail orders"
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+      - name: wh_order_items
+        description: "Raw line items for orders"
+      - name: wh_products
+        description: "Product catalog"
+      - name: wh_inventory
+        description: "Store inventory positions"
+      - name: wh_suppliers
+        description: "Supplier registry and SLAs"
+
+models:
+  - name: stg_orders
+    description: "Cleaned and standardized retail orders"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+      - name: normalized_usd_amount
+        tests:
+          - not_null
+  - name: stg_products
+    description: "Standardized product dimensions"
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: sku
+        tests:
+          - unique
+          - not_null

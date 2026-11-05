@@ -1,0 +1,23 @@
+[
+  {
+    "supplier_id": "SUP-101",
+    "name": "Apex Micro-Electronics Corp",
+    "contact_email": "orders@apexmicro.com",
+    "rating": 4.85,
+    "fulfillment_sla_days": 2
+  },
+  {
+    "supplier_id": "SUP-102",
+    "name": "Nordic Clean Air Systems",
+    "contact_email": "b2b@nordicclean.se",
+    "rating": 4.92,
+    "fulfillment_sla_days": 3
+  },
+  {
+    "supplier_id": "SUP-103",
+    "name": "Summit Outdoor Apparel Ltd",
+    "contact_email": "wholesale@summitoutdoor.com",
+    "rating": 4.7,
+    "fulfillment_sla_days": 4
+  }
+]

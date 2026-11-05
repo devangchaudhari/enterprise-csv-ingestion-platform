@@ -1,0 +1,144 @@
+[
+  {
+    "order_id": "ORD-2026-1001",
+    "customer_id": "CUST-9821",
+    "store_id": "STORE-NYC-01",
+    "order_date": "2026-10-24T14:30:00Z",
+    "currency": "USD",
+    "items": [
+      {
+        "product_id": "PROD-101",
+        "sku": "ELEC-HEADPHONE-ANC",
+        "quantity": 1,
+        "unit_price": 199.99,
+        "discount_pct": 0.0
+      },
+      {
+        "product_id": "PROD-102",
+        "sku": "ELEC-CABLE-USB-C",
+        "quantity": 2,
+        "unit_price": 14.99,
+        "discount_pct": 10.0
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2026-1002",
+    "customer_id": "CUST-4412",
+    "store_id": "STORE-LA-02",
+    "order_date": "2026-10-24T15:10:00Z",
+    "currency": "CAD",
+    "items": [
+      {
+        "product_id": "PROD-201",
+        "sku": "HOME-AIR-PURIFIER",
+        "quantity": 1,
+        "unit_price": 249.0,
+        "discount_pct": 5.0
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2026-1003",
+    "customer_id": "CUST-8819",
+    "store_id": "STORE-CHI-01",
+    "order_date": "2026-10-24T16:00:00Z",
+    "currency": "EUR",
+    "items": [
+      {
+        "product_id": "PROD-301",
+        "sku": "APP-WINTER-JACKET",
+        "quantity": 1,
+        "unit_price": 120.0,
+        "discount_pct": 0.0
+      },
+      {
+        "product_id": "PROD-302",
+        "sku": "APP-THERMAL-GLOVES",
+        "quantity": 2,
+        "unit_price": 25.0,
+        "discount_pct": 0.0
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2026-1004",
+    "customer_id": "CUST-1044",
+    "store_id": "STORE-MIA-03",
+    "order_date": "2026-10-24T16:45:00Z",
+    "currency": "USD",
+    "items": [
+      {
+        "product_id": "PROD-103",
+        "sku": "ELEC-SMART-WATCH",
+        "quantity": 1,
+        "unit_price": 299.99,
+        "discount_pct": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2026-1005",
+    "customer_id": "CUST-3392",
+    "store_id": "STORE-SEA-01",
+    "order_date": "2026-10-24T17:15:00Z",
+    "currency": "USD",
+    "items": [
+      {
+        "product_id": "PROD-202",
+        "sku": "HOME-COFFEE-MAKER",
+        "quantity": 1,
+        "unit_price": 89.5,
+        "discount_pct": 0.0
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2026-ERR-01",
+    "customer_id": "CUST-7741",
+    "store_id": "STORE-NYC-01",
+    "order_date": "2026-10-24T18:00:00Z",
+    "currency": "USD",
+    "items": [
+      {
+        "product_id": "PROD-101",
+        "sku": "ELEC-HEADPHONE-ANC",
+        "quantity": -2,
+        "unit_price": 199.99,
+        "discount_pct": 0.0
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2026-ERR-02",
+    "customer_id": "",
+    "store_id": "STORE-LA-02",
+    "order_date": "2026-10-24T18:30:00Z",
+    "currency": "USD",
+    "items": [
+      {
+        "product_id": "PROD-102",
+        "sku": "ELEC-CABLE-USB-C",
+        "quantity": 1,
+        "unit_price": 14.99,
+        "discount_pct": 0.0
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2026-ERR-03",
+    "customer_id": "CUST-9923",
+    "store_id": "STORE-CHI-01",
+    "order_date": "INVALID_DATE_FORMAT_HERE",
+    "currency": "USD",
+    "items": [
+      {
+        "product_id": "PROD-201",
+        "sku": "HOME-AIR-PURIFIER",
+        "quantity": 1,
+        "unit_price": 249.0,
+        "discount_pct": 0.0
+      }
+    ]
+  }
+]

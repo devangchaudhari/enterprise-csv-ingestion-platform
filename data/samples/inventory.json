@@ -1,0 +1,44 @@
+[
+  {
+    "store_id": "STORE-NYC-01",
+    "product_id": "PROD-101",
+    "stock_on_hand": 140,
+    "reserved_qty": 12,
+    "reorder_point": 25
+  },
+  {
+    "store_id": "STORE-NYC-01",
+    "product_id": "PROD-102",
+    "stock_on_hand": 550,
+    "reserved_qty": 40,
+    "reorder_point": 100
+  },
+  {
+    "store_id": "STORE-LA-02",
+    "product_id": "PROD-201",
+    "stock_on_hand": 65,
+    "reserved_qty": 8,
+    "reorder_point": 20
+  },
+  {
+    "store_id": "STORE-CHI-01",
+    "product_id": "PROD-301",
+    "stock_on_hand": 85,
+    "reserved_qty": 15,
+    "reorder_point": 30
+  },
+  {
+    "store_id": "STORE-MIA-03",
+    "product_id": "PROD-103",
+    "stock_on_hand": 90,
+    "reserved_qty": 5,
+    "reorder_point": 15
+  },
+  {
+    "store_id": "STORE-SEA-01",
+    "product_id": "PROD-202",
+    "stock_on_hand": 42,
+    "reserved_qty": 4,
+    "reorder_point": 10
+  }
+]

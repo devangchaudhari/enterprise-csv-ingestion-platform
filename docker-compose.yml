@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: retail_platform_db
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-retail_dw}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: retail_platform_redis
+    restart: always
+    ports:
+      - "6379:6379"
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: retail_platform_api
+    restart: always
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/retail_dw
+      REDIS_URL: redis://redis:6379/0
+      WAREHOUSE_TYPE: postgres
+      SFTP_HOST: sftp
+      SFTP_PORT: 22
+      SFTP_USER: retail_partner
+      SFTP_PASSWORD: PartnerSecure2026!
+      DOWNSTREAM_API_URL: http://127.0.0.1:8000/api/v1/mock-retail/downstream-orders
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    volumes:
+      - ./data:/app/data
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: retail_platform_ui
+    restart: always
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  sftp:
+    image: atmoz/sftp:alpine
+    container_name: retail_platform_sftp
+    ports:
+      - "2222:22"
+    command: retail_partner:PartnerSecure2026!:1001:1001:incoming,archive
+    volumes:
+      - ./data/samples/sftp_root:/home/retail_partner
+
+volumes:
+  postgres_data:

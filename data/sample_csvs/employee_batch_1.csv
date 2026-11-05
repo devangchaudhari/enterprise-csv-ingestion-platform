@@ -1,0 +1,4 @@
+Employee_ID,Employee_Name,Department,Email,Salary
+101,John Doe,Engineering,john.doe@enterprise.com,125000.00
+102,Jane Smith,Marketing,jane.smith@enterprise.com,98000.00
+103,Robert Chen,Sales,robert.chen@enterprise.com,110000.00
