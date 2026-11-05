@@ -1,3 +1,13 @@
+---
+title: Enterprise CSV Backend
+emoji: ⚡
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Enterprise CSV Data Ingestion and Workflow Automation Platform
 
 [![Backend Test Suite](https://img.shields.io/badge/pytest-6%20passed%20100%25-brightgreen.svg)](https://pytest.org/)
